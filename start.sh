@@ -9,7 +9,7 @@ if [ -z "$JVM_OPTS" ]; then
 fi
 
 if [ -z "$CONFIG_YML" ]; then
-  CONFIG_YML=/opt/jmx_exporter/config.yml
+  CONFIG_YML=/config/config.yml
 fi
 
 java $JVM_OPTS -jar /opt/jmx_exporter/jmx_prometheus_httpserver-$VERSION-jar-with-dependencies.jar $SERVICE_PORT $CONFIG_YML
